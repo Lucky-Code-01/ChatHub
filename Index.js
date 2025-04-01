@@ -9,7 +9,11 @@ const users = {};
 const server = http.createServer(app);
 
 // now integrate or join the socket to http server
-const io = new Server(server);
+const io = new Server(server,{
+    cors:{
+        origin:['https://chat-hub-nine.vercel.app/']
+    }
+});
 
 // middle warr
 // Static files serve karna

@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io('https://chat-hub-nine.vercel.app/');
 const userName = prompt("Enter your name :- ");
 const msgbox = document.querySelector(".chat-box");
 const input = document.querySelector(".msginput");
