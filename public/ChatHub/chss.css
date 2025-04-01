@@ -1,0 +1,26 @@
+.right::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+    background-color:#84c7d8;
+    transform: skew(30deg);
+}
+
+
+/* Adding a tilted corner effect */
+.left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+    background-color: #8bed9b; /* Matching gradient color */
+    transform: skew(30deg); /* Tilt effect */
+    border-radius: 0 10px 0 0; /* Rounded top-right corner */
+}

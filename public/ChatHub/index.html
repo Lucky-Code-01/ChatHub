@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Chat.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="main-box">
+        <h1>Get And Secure Of Your Send And Receive Messagess</h1>
+        <img src="./Image/logo.png" alt="" class="logo">
+        <!-- chat box -->
+        <div class="chat-box"></div>
+        <!-- sender box -->
+        <div class="send-box">
+            <form class="send-form">
+                <input type="text" placeholder="Enter your message..." class="msginput">
+                <button class="send"><i class='bx bx-send' style='color:#ffffff' ></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- connect the socket to html file -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="Chat.js"></script>
+</body>
+</html>
